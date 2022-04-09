@@ -5,6 +5,9 @@
     --first-btn-color: #212121;
     --second-btn-color: #FFFFFF;
     --footer-bg-color: #2F303A;
+    --typical-padding: 94px;
+    --typical-margin: 50px;
+    --typical-side: 215px;
 }
 
 body {
@@ -75,11 +78,16 @@ ul, ol {
     overflow: hidden;
 }
 
-/* -----HEADER----- */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
+/* -----HEADER----- */
 .heder {
     padding-top: 25px;
-    padding-left: 215px;
+    padding-left: var(--typical-side);
     padding-bottom: 25px;
 }
 
@@ -112,10 +120,18 @@ ul, ol {
     color: #212121;
 }
 
-/* -----ГЕРОЙ----- */
+.header-nav {
+    border: 2px solid teal;
+}
 
+.contact-nav {
+    border: 2px solid teal;
+}
+
+/* -----ГЕРОЙ----- */
 .hero {
     background: #2F303A;
+    padding: 200px 452px;
 }
 
 .hero-title {
@@ -124,6 +140,8 @@ ul, ol {
     line-height: 1.4;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    max-width: 696px;
+    margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -149,12 +167,17 @@ ul, ol {
 
 
 /* -----ОСОБЕННОСТИ----- */
+.section-feature {
+    padding: 94px 215px;
+}
+
 .feature-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    margin-bottom: 10px;
 }
 
 .feature-text {
@@ -164,11 +187,24 @@ ul, ol {
 }
 
 /* -----ЧЕМ МЫ ЗАНИМАЕМСЯ----- */
+.about {
+    padding-right: var(--typical-side);
+    padding-bottom: var(--typical-padding);
+    padding-left: var(--typical-side);
+}
 
+.about-title {
+    margin-bottom: var(--typical-margin);
+}
 
 /* -----НАША КОМАНДА----- */
 .team {
     background: #F5F4FA;
+    padding: 94px 215px 94px 215px;
+}
+
+.team-title {
+    margin-bottom: var(--typical-margin);
 }
 
 .team-pre-title {
@@ -177,17 +213,27 @@ ul, ol {
     line-height: 1.3;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-text {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    padding-bottom: 30px;
+}
+
+.team-item {
+    width: 270px;
+    height: 368px;
+    border: 2px solid blueviolet;
 }
 
 /* -----FOOTER----- */
 .footer {
     background: var(--footer-bg-color);
+    padding: 60px 1154px 60px 215px;
 }
 
 .logo-footer {
@@ -241,6 +287,14 @@ ul, ol {
     background-color: var(--accent-color);
     display: inline;
     cursor: pointer;
+}
+
+.menu-nav {
+    border: 2px solid teal;
+}
+
+.filters-list {
+    border: 2px solid teal;
 }
 
 /* -----Категория все----- */
