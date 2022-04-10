@@ -87,6 +87,11 @@ img {
     height: auto;
 }
 
+.section {
+    padding-top: var(--typical-padding);
+    padding-bottom: var(--typical-padding);
+}
+
 /* -----HEADER----- */
 /* Хедер */
 .heder {
@@ -96,6 +101,11 @@ img {
     border-bottom-style: solid;
 
     border-bottom-color: var(--header-border-line-color);
+}
+
+/* header-line */
+.header-line {
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 /* header-container */
@@ -223,12 +233,6 @@ img {
 
 
 /* -----ОСОБЕННОСТИ----- */
-/* section-feature */
-.section-feature {
-    padding-top: var(--typical-padding);
-    padding-bottom: var(--typical-padding);
-}
-
 /* feature-list */
 .feature-list {
     display: flex;
@@ -266,7 +270,7 @@ img {
 /* -----ЧЕМ МЫ ЗАНИМАЕМСЯ----- */
 /* about */
 .about {
-    padding-bottom: var(--typical-padding);
+    padding-top: 0;
 }
 
 /* about-title */
@@ -283,7 +287,7 @@ img {
 
 /* about-item */
 .about-item {
-    width: calc((100% - 60px) * 3n);
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
 }
 
@@ -291,11 +295,10 @@ img {
     margin-right: 0;
 }
 
+
 /* -----НАША КОМАНДА----- */
 /* team */
 .team {
-    padding: 94px 215px 94px 215px;
-
     background: #F5F4FA;
 }
 
@@ -313,10 +316,10 @@ img {
 
 /* team-item */
 .team-item {
-    border: 2px solid blueviolet;
     text-align: center;
-    width: calc((100% - 90px) * 4n);
     margin-right: 30px;
+
+    background: #FFFFFF;
 }
 
 .team-item:nth-child(4n) {
@@ -420,17 +423,17 @@ img {
 
 .menu-nav {
     display: flex;
-    flex-wrap: wrap;
-    border: 2px solid blueviolet;
-    padding-top: var(--typical-padding);
+    justify-content: center;
     margin-bottom: var(--typical-margin);
 }
 
 .menu-nav-item {
-    width: calc((100% - 32px) * 5n);
     margin-right: 8px;
 }
 
+.menu-nav .menu-nav-item:last-child {
+    margin-right: 0;
+}
 
 /* -----Категория все----- */
 /* filters-list */
@@ -441,8 +444,8 @@ img {
 
 /* filters-item */
 .filters-item {
-    width: calc((100% - 60px) * 3n);
     margin-right: 30px;
+    margin-bottom: 30px;
 
     background: #FFFFFF;
 }
@@ -451,9 +454,16 @@ img {
     margin-right: 0;
 }
 
-/* filters-img */
-.filters-img {
-    margin-bottom: 20px;
+
+.filters-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+/* filters-name */
+.filters-name {
+    border-right: 1px solid rgba(238, 238, 238, 1);
+    border-left: 1px solid rgba(238, 238, 238, 1);
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
 
 /* filters-title */
@@ -462,6 +472,7 @@ img {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+    padding-top: 20px;
     margin-bottom: 4px;
 
     color: var(--title-color);
@@ -475,6 +486,10 @@ img {
     margin-bottom: 20px;
 
     color: #757575;
+}
+
+.filters-title, .filters-text {
+    padding-left: 24px;
 }
 
 
