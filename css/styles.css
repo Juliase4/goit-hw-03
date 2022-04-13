@@ -94,8 +94,6 @@ img {
 /* -----HEADER----- */
 /* Хедер */
 .header {
-    padding-top: 25px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -165,8 +163,6 @@ img {
 
 /* contact-link */
 .contact-link {
-    margin-right: var(--typical-margin);
-
     color: #757575;
 }
 
